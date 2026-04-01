@@ -1,4 +1,4 @@
-public class Person implements Comparable<Object>
+public class Person implements Comparable<Person>
 {
 	/***** (Part 2) create helper inner class for Identity*****/
 	//Creates a helper class for Identity
@@ -123,7 +123,7 @@ public class Person implements Comparable<Object>
 
 	// INTERFACE METHODS
 	@Override
-	public int compareTo(Object other) {
+	public int compareTo(Person other) {
 		if (other == null || (!(other instanceof Person))) {
 			throw new IllegalArgumentException("NULL given to compareTo method in Person, or not a Person type");
 		}
